@@ -6,10 +6,10 @@ function jsonBuilder(value){
     return {"input": value, "answers": answers};
 }
 
-app.get("/api/answer/:answer", (req, res) => {
+app.get("/api/answer", (req, res) => {
     res.setHeader("Content-Type", "application/json");
-    const input = req.params.answer;
-    res.json(jsonBuilder(input));
+    const inp = req.query.input;
+    res.json(jsonBuilder(inp));
 });
 
 app.listen(3221, () => console.log("API started"));
