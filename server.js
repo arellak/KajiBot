@@ -9,7 +9,8 @@ function jsonBuilder(name, value){
 app.get("/api/answer/:answer", (req, res) => {
     res.setHeader("Content-Type", "application/json");
     const input = JSON.stringify(req.params.answer + ":" + "aiwdiwi");
-    res.send(input);
+    res.json(input);
+    //res.send(input);
 });
 
 
