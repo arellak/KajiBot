@@ -1,0 +1,17 @@
+{
+  "name": "kajibot",
+  "version": "1.0.0",
+  "description": "Kaji Chatbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nimble",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
+    "node-telegram-bot-api": "^0.30.0",
+    "pg": "^7.12.1"
+  }
+}
